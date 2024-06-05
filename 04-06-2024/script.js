@@ -1,4 +1,3 @@
-export {counter}
 
 const div = document.querySelector('.counter');
 const p = document.createElement('p');
@@ -10,14 +9,14 @@ startButton.className = 'start';
 startButton.textContent = 'Start';
 stopButton.textContent = 'Stop';
 
-p.textContent = new Date();
+p.textContent = new Date().toLocaleString();
 
-div.append(startButton, stopButton);
+div.append(startButton, stopButton, p);
 
 const runInterval = () => {
     const id = setInterval (() => {
 
-    p.textContent = new Date ().getTime();
+    p.textContent = new Date ().toLocaleString();
     console.log(p.textContent);
     },1000);
 return id;
@@ -35,3 +34,4 @@ stopButton.addEventListener('click', () => {
 });
 
 div.appendChild(p);
+
