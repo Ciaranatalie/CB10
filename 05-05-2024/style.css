@@ -22,14 +22,15 @@
 }
 
 button {
-    width: 100px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding: 10px 20px;
     margin: 5px 0;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 18px;
+    font-weight: 600;
     color: white; 
     background-color: darkslateblue; 
     transition: background-color 0.3s ease;
