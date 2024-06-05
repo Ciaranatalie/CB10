@@ -1,4 +1,3 @@
-
 const div = document.querySelector('.counter');
 const p = document.createElement('p');
 const stopButton = document.createElement('button');

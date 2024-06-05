@@ -15,13 +15,13 @@ parent.addEventListener('click', (event) => {
         
         switch (event.target.id) {
             case 'button1':
-                console.log('Button 1 clicked');
+                console.log('Hai cliccato il bottone 1');
                 break;
             case 'button2':
-                console.log('Button 2 clicked');
+                console.log('Hai cliccato il bottone 2');
                 break;
             case 'button3':
-                console.log('Button 3 clicked');
+                console.log('Hai cliccato il bottone 3');
                 break;
             case 'openModal':
                 openModal();
@@ -52,11 +52,11 @@ const closeModal = () => {
 };
 
 document.getElementById('closeModal').addEventListener('click', closeModal);
-document.getElementById('yesButton').addEventListener('click', () => {
-    console.log('YES clicked');
+document.getElementById('yesBtn').addEventListener('click', () => {
+    console.log('Hai cliccato Si');
     closeModal();
 });
-document.getElementById('noButton').addEventListener('click', () => {
-    console.log('NO clicked');
+document.getElementById('noBtn').addEventListener('click', () => {
+    console.log('Hai cliccato No');
     closeModal();
 });
