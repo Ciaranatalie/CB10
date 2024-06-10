@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB Popular Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Film e Serie TV Popolari</h1>
+        <input type="text" id="searchBar" placeholder="Cerca un film...">
+        <div class="controls">
+            <select id="typeSelect">
+                <option value="movie">Film</option>
+                <option value="tv">Serie TV</option>
+            </select>
+        </div>
+        <div class="movies" id="movies"></div>
+        <div class="pagination">
+            <button id="prevPage">Pagina Precedente</button>
+            <button id="nextPage">Pagina Successiva</button>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
