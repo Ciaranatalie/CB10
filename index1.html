@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form id="productForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required><br>
+
+        <label for="categoryId">Category ID:</label>
+        <input type="number" id="categoryId" name="categoryId" required><br>
+
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" name="image" required><br>
+
+        <button id="buttonSend">Create Product</button>
+    </form>
+
+    <div>
+        <label for="deleteId">ID to delete:</label>
+        <input type="number" id="deleteId" name="deleteId" required><br>
+        <button id="buttonDelete">Delete Product</button>
+        <p id="deleteFeedback" style="display:none;color:red;">Product removed</p>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
