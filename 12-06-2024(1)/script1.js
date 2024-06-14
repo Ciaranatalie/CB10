@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const BASE_URL = 'https://api.escuelajs.co/api/v1/products';
+    const BASE_URL = 'https://api.escuelajs.co/';
+    const getProductEndpoint = "api/v1/products";
+    const url = BASE_URL + getProductEndpoint; 
 
     const buttonSendEl = document.getElementById('buttonSend');
     const buttonDeleteEl = document.getElementById('buttonDelete');
@@ -8,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function createProduct(productData) {
         try {
             console.log('Sending request with data:', productData);
-            const response = await fetch(BASE_URL, {
+            const response = await fetch(URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function deleteProduct(id) {
-        const deleteURL = `${BASE_URL}/${id}`;
+        const deleteURL = `${URL}/${id}`;
 
         try {
             const response = await fetch(deleteURL, {
@@ -55,11 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    buttonSendEl.addEventListener('click', async (event) => {
-        event.preventDefault();
+    buttonSendEl.addEventListener('click', async (e) => {
+        e.preventDefault();
 
         const productData = {
-            title: document.getElementById('title').value,
+            title: document.querySelector('title').value,
             price: parseFloat(document.getElementById('price').value),
             description: document.getElementById('description').value,
             categoryId: parseInt(document.getElementById('categoryId').value),

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Prodotti</title>
+    <style rel="stylesheet" href="style.css"></style>
+</head>
+<body>
+    <form id="productForm" style="display: flex; flex-direction: column; max-width: 300px; gap: 12px">
+        <input class="title" type="text" placeholder="Titolo" />
+        <input class="price" type="number" placeholder="Prezzo" />
+        <input class="description" type="text" placeholder="Descrizione" />
+        <input class="category-id" type="number" placeholder="ID Categoria" />
+        <input class="images" type="text" placeholder="Immagini (URL)" />
+        <button class="button-send">Invia</button>
+    </form>
+    <div style="padding-top: 10px;">
+        <input type="number" class="delete-id" placeholder="ID Prodotto">
+        <button class="button-update">Aggiorna</button>
+        <button class="button-delete">Elimina</button>
+    </div>
+    <div class="feedback-container">
+        <div class="feedback error"></div>
+        <div class="feedback success"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
