@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Appoint</h1>
+        <div class="appointments">
+            <div class="appointments-section" id="not-completed">
+                <h2>Appuntamenti non ancora completati</h2>
+                <ul id="not-completed-list"></ul>
+            </div>
+            <div class="appointments-section" id="completed">
+                <h2>Appuntamenti già conclusi</h2>
+                <ul id="completed-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Sei sicuro di voler completare questo appuntamento?</p>
+            <button id="yes-btn">SI</button>
+            <button id="no-btn">NO</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
