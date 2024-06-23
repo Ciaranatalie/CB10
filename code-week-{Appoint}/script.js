@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const li = document.createElement("li");
             li.textContent = appointment.title;
             li.dataset.id = appointment.id;
+            li.style.backgroundColor = getRandomColor();
 
             if (appointment.completed) {
                 completedList.appendChild(li);
@@ -30,6 +31,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 notCompletedList.appendChild(li);
             }
         });
+    }
+
+    function getRandomColor() {
+        const colors = [
+            "#f1af79", 
+            "#efc66b", 
+            "#15388d", 
+            "#1a64b7", 
+            "#20a3d9",
+            "#e2b659",
+            "#ecd15e",
+            "#1d61c5",
+            "#209cd8",
+            "#20d6d8",
+            "#f3d889",
+        ];
+        return colors[Math.floor(Math.random() * colors.length)];
     }
 
     function openModal(id) {
