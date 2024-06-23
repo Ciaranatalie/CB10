@@ -35,17 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function getRandomColor() {
         const colors = [
-            "#f1af79", 
-            "#efc66b", 
-            "#15388d", 
-            "#1a64b7", 
-            "#20a3d9",
-            "#e2b659",
-            "#ecd15e",
-            "#1d61c5",
-            "#209cd8",
-            "#20d6d8",
-            "#f3d889",
+            "#ffea94", 
+            "#fff2bf",
+            "#ffffb6",
+            "#f4de9b",
+            "#ffe180",
+            "#f8efba",
+            "#fffaf2",
+            "#fffbe0",
+            "#fffff7",
+            "#cbf4f7",
+            
         ];
         return colors[Math.floor(Math.random() * colors.length)];
     }
