@@ -45,9 +45,15 @@ function getMenuItemHTML(options = {}){
     // href = options.href -> se href non è definito e sotto ho {href = '#'} = options, allora href avrà come valore #
     const {label, href = "#"} = options; 
 
+    const subitemsHTML = children
+        .map(item => `<li class="item subitem">${item.label}</li>`)
+        .join("");
+    const subMenuHTML = "<ul>" + subitemsHTML + "</ul>";
+
     return `
             <li class="item">
                 <a href="${href}">${label}</a>
+                ${children.length > 0 ? subMenuHTML : ""}
             </li>
     `;
 }

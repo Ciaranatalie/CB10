@@ -19,14 +19,14 @@ window.addEventListener("DOMContentLoaded", () => {
 })
 
 
-function renderPage (appEl){
+async function renderPage (appEl){
     appEl.innerHTML = 'Ciao Mondo';
 
     // andare a creare una function per ogni elemento della pagina 
     // ogni function mi torna dell'HTML, e una volta messa insieme li stampo
 
     const header = getHeaderHTML();
-    const main = getMainHTML();
+    const main = await getMainHTML();
     const footer = getFooterHTML();
 
     const html = header + main + footer;
@@ -59,30 +59,7 @@ function createElement (element, attrs = {}, parent = document.body) { // l'ulti
     
 }
 
-async function getMainHTML () {
-    const posts = await fetchPosts();
-    const postsHTML = posts.map(post => `
-        <article>
-            <h2>${post.article}</h2>
-            <p>${post.body}</p>
-        </article>
-    `).join("");
 
-    return `
-    <main>
-        <aside>Sidebar</aside>
-        <section>
-            ${postsHTML}
-        </section>
-    </main>
-    `;
-}
-
-async function fetchPosts () {
-    const response = await fetch ('https://jsonplaceholder.typicode.com/posts');
-    const posts = await response.json ();
-    return posts;
-}
 
 
 

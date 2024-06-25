@@ -92,6 +92,22 @@ main {
     flex-direction: column;
 }
 
+.main-grid {
+    display:grid;
+    grid-template-columns: max(30%, 100px) 1fr;
+    gap: 1rem;
+}
+
+div[role="list"] {
+    display: flex;
+    gap:1rem;
+    flex-flow: column nowrap;
+}
+
+div[role="list"]> article:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
 aside {
     background-color: red;
     padding: 1rem;
