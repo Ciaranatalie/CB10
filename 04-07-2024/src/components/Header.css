@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: hsl(202, 86%, 94%);
+    border-bottom: 1px solid hsl(203, 41%, 72%);
+}
+
+h1 {
+    margin: 0;
+}
+
+.clear-button {
+    background: none;
+    border: none;
+    color: hsl(4, 69%, 50%);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.clear-button:hover {
+    text-decoration: underline;
+}

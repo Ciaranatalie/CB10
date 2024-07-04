@@ -1,0 +1,14 @@
+.results-display {
+    background-color: hsl(202, 55%, 16%);
+    color: white;
+    padding: 20px;
+    width: 300px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+strong {
+    color: hsl(61, 70%, 52%);
+}
