@@ -17,3 +17,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: var (--dark-blue);
+}
+
+h1 {
+  font-weight: 400;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
