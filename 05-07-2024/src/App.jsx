@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import Header from './components/Header';
+import CalculatorForm from './components/CalculatorForm';
+import ResultsDisplay from './components/ResultsDisplay';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [results, setResults] = useState(null);
+
+  const calculateRepayments = ({ amount, term, rate, type }) => {
+    const principal = parseFloat(amount);
+    const interestRate = parseFloat(rate) / 100 / 12;
+    const numberOfPayments = parseInt(term) * 12;
+
+    let monthlyRepayment = 0;
+    if (type === 'repayment') {
+      monthlyRepayment = (principal * interestRate) / (1 - Math.pow(1 + interestRate, -numberOfPayments));
+    } else {
+      monthlyRepayment = principal * interestRate;
+    }
+
+    const totalRepayment = monthlyRepayment * numberOfPayments;
+
+    setResults({
+      monthlyRepayment,
+      totalRepayment,
+    });
+  };
 
   return (
-      <div>
-        <div>
-          <h1>Mortgage Calc</h1>
-          <form>
-            <label>Mortgage Amount</label>
-            <input name="mortgageAmount"></input>
-
-            <label>Mortgage Term</label>
-            <input></input>
-
-            <label>Interest Rate</label>
-            <input name="interestRate" type="text" onChange={}></input>
-
-            <input></input>
-            <input></input>
-          </form>
-        </div>
-        <div>
-          <h2>Your result</h2>
-          <h3>Risultato</h3>
-        </div>
-      </div>
+    <div className="app">
+      <Header />
+      <main className="main-content">
+        <CalculatorForm onCalculate={calculateRepayments} />
+        <ResultsDisplay results={results} />
+      </main>
+    </div>
   );
-}
+};
 
-export default App
+export default App;
