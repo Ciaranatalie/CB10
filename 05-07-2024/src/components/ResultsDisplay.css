@@ -3,13 +3,12 @@
     color: white;
     padding: 20px;
     width: 300px;
-  }
-  
-  h2 {
+}
+
+h2 {
     margin-top: 0;
-  }
-  
-  strong {
+}
+
+strong {
     color: hsl(61, 70%, 52%);
-  }
-  
+}

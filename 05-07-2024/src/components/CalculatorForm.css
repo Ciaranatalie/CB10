@@ -4,25 +4,25 @@
     padding: 20px;
     width: 300px;
     gap: 20px;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
-  }
-  
-  input {
+}
+
+input {
     padding: 10px;
     border: 1px solid hsl(203, 41%, 72%);
     border-radius: 5px;
-  }
+}
   
-  .radio-group {
+.radio-group {
     display: flex;
     gap: 10px;
-  }
-  
-  .calculate-button {
+}
+
+.calculate-button {
     padding: 10px;
     background-color: hsl(61, 70%, 52%);
     border: none;
@@ -30,9 +30,8 @@
     color: white;
     cursor: pointer;
     font-size: 16px;
-  }
-  
-  .calculate-button:hover {
+}
+
+.calculate-button:hover {
     background-color: hsl(61, 70%, 40%);
-  }
-  
+}
