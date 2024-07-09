@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(2, 48, 71, 0.8), rgba(255, 183, 3, 0.8));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: #023047;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 15px;
+  border: 2px solid #fb8500;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #ffb703;
+}
+
+button {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #fb8500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ffb703;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #023047;
+  color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li:nth-child(even) {
+  background-color: #ffb703;
+  color: #023047;
+}
+
+li button {
+  background-color: #fb8500;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li button:hover {
+  background-color: #ffb703;
+  transform: scale(1.05);
+}
+
+li span {
+  color: white;
+}
