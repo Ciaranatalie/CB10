@@ -2,7 +2,7 @@
     background-color:var(--orange);
     border: none;
     border-radius: 4px;
-    display:flex;
+    display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;

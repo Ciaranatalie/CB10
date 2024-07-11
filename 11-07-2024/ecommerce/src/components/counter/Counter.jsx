@@ -1,3 +1,6 @@
+import styles from './Counter.module.css'
+
+import classNames from 'classnames';
 import IconPlus from './components/icons/IconPlus';
 import IconMinus from './components/icons/IconMinus';
 
@@ -7,7 +10,7 @@ function Counter () {
             <button>
                 <IconMinus/>
             </button>
-            <button>0</button>
+            <div>0</div>
             <button>
                 <IconPlus/>
             </button>

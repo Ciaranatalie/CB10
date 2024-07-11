@@ -1,8 +1,9 @@
 // import styles './App.module.css';
-import Button from './components/button/Button';
-import IconCart from './components/icons/iconCart';
-import Counter from './components/counter/Counter';
-import ShowBox from './components/showbox/Showbox';
+import React from 'react';
+import Button from './components/button/Button.jsx';
+import IconCart from "./components/icons/IconCart.jsx"
+import Counter from './components/counter/Counter.jsx';
+import ProductLightBox from "./components/productLightBox/ProductLightBox.jsx"
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
         <IconCart fill="#000"/>
       </Button>
       <Counter/>
-      <ShowBox imgUrl={"./src/assets/images/image-product-1.jpg"}/>
+      <ProductLightBox />
     </>
-  )
-};
+  );
+}
 export default App;
