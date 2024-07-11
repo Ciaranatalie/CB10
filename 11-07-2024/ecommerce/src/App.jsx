@@ -2,8 +2,7 @@
 import Button from './components/button/Button';
 import IconCart from './components/icons/iconCart';
 import Counter from './components/counter/Counter';
-import IconPlus from './components/icons/IconPlus';
-import IconMinus from './components/icons/IconMinus';
+import ShowBox from './components/showbox/Showbox';
 
 function App() {
 
@@ -13,7 +12,8 @@ function App() {
       <Button text={"Add to cart"}>
         <IconCart fill="#000"/>
       </Button>
-      <Counter></Counter>
+      <Counter/>
+      <ShowBox imgUrl={"./src/assets/images/image-product-1.jpg"}/>
     </>
   )
 };

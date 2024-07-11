@@ -11,4 +11,6 @@
     padding: 8px 16px;
 }
 
-.counter 
+.counter div {
+    text-align: center ;
+}

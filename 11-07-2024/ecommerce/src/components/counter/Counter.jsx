@@ -1,12 +1,15 @@
+import IconPlus from './components/icons/IconPlus';
+import IconMinus from './components/icons/IconMinus';
+
 function Counter () {
     return (
         <div className={classNames(styles.counter)}>
             <button>
-                <IconMinus></IconMinus>
+                <IconMinus/>
             </button>
             <button>0</button>
             <button>
-                <IconPlus></IconPlus>
+                <IconPlus/>
             </button>
         </div>
     );
