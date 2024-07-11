@@ -6,7 +6,7 @@
   --grayish-blue: hsl(220, 14%, 75%);
   --light-grayish-blue: hsl(223, 64%, 98%);
   --white: hsl(0, 0%, 100%);
-  --black (with 75% opacity for lightbox background): hsl(0, 0%, 0%);
+  --black (with 75% opacity for lightbox background); hsl(0, 0%, 0%);
 }
 
 @font-face {
