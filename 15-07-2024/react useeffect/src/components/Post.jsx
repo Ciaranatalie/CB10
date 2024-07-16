@@ -7,7 +7,7 @@ function Post() {
     const [id, setId] = useState(1);
 
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        fetch(`https://api.adviceslip.com/advice/${id}`)
             .then(response => response.json())
             .then(data => setPost(data))
             .catch(error => console.error('Error fetching post:', error));
