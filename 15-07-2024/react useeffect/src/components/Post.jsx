@@ -4,13 +4,22 @@ import './Post.css';
 
 function Post() {
     const [post, setPost] = useState(null);
-    const [id, setId] = useState(1);
+    const [id, setId] = useState(() => {
+        const savedId = localStorage.getItem('postId');
+        return savedId ? parseInt (savedId, 10) : 1;
+    });
 
     useEffect(() => {
-        fetch(`https://api.adviceslip.com/advice/${id}`)
+        console.log('Cerco i dati del post...')
+        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
             .then(response => response.json())
             .then(data => setPost(data))
-            .catch(error => console.error('Error fetching post:', error));
+            .catch(error => console.error('Errore nel trovare il post:', error));
+    }, [id]);
+
+    useEffect(() => {
+        localStorage.setItem('postId', id);
+        console.log('Il postId è stato aggiornato nel local storage:', id);
     }, [id]);
 
     return (
