@@ -18,9 +18,12 @@ const Home = ({ products, addToCart }) => {
             <h1>Online Shopping</h1>
             <div className="products">
                 {products.map(product => (
-                    <div key={product.id} onClick={() => openModal(product)}>
-                        <Product product={product} addToCart={addToCart} />
-                    </div>
+                    <Product 
+                    key={product.id} 
+                    product={product} 
+                    addToCart={addToCart} 
+                    onProductClick={openModal} 
+                    />
                 ))}
             </div>
             {selectedProduct && (

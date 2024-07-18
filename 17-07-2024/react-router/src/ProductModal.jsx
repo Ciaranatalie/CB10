@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
-import './ProductModal.css'; // Crea un file CSS per gli stili della modale
+import './ProductModal.css'; 
 
 const ProductModal = ({ product, onClose, addToCart }) => {
   if (!product) return null;
@@ -14,7 +14,7 @@ const ProductModal = ({ product, onClose, addToCart }) => {
         <h2>{product.title}</h2>
         <p>{product.description}</p>
         <p>Price: € {product.price}</p>
-        <Link to={`/product/${product.id}`}>Go to Product Page</Link>
+        <Link to={`/product/${product.id}`} onClick={onClose}>Go to Product Page</Link>
         <button onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
     </div>,
