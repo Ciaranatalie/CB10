@@ -22,3 +22,5 @@ come un AST, il traverser potrebbe aiutare a contare i caratteri nei nodi rileva
 In breve, il tokenizer è utile per contare i caratteri in testi semplici, mentre il traverser è più adatto per 
 strutture complesse come gli AST.
 
+Ciao!
+
