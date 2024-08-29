@@ -1,6 +1,6 @@
 import { IProduct } from "@/model/product";
 
-const API_KEY = "your_api_key_here"; // Replace with your actual API key
+const API_KEY = "your_api_key_here";
 const API_VERSION = 1;
 const BASE_URL = "http://tyresaddict.ru/api/tyres/...";
 
