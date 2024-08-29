@@ -1,0 +1,21 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "title": "Ventilatore",
+            "description": "lorem",
+            "price": "100",
+            "category":"fuffa",
+            "discount":"20"
+
+        },
+        {
+            "id": "2",
+            "title": "Ventilatore",
+            "description": "lorem",
+            "price": "100",
+            "category":"fuffa",
+            "discount":"20"
+        }
+    ]
+}
