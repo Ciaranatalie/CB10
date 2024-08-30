@@ -6,7 +6,7 @@ export default async function Products() {
 
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <main className="grid grid-cols-3 gap-4 p-5">
         {products.map((product) => (
           <div

@@ -3,7 +3,7 @@ import NavBar from "@/app/(components)/NavBar";
 export default function Login() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <main>
         <form className="login-form">
           <label>

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <header className="header">
         <h1>Belgom: dove l'esperienza si unisce all'eccellenza</h1>
       </header>

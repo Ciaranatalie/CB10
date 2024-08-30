@@ -3,7 +3,7 @@ import NavBar from "@/app/(components)/NavBar";
 export default function About() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       
       <main>
         <div className="py-16 bg-white">  
